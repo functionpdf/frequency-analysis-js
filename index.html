@@ -1,0 +1,131 @@
+<body>
+    <h1>
+    Substitution Cipher Frequency Analayzer
+    </h1>
+    <p>
+    Substitution Ciphers - ciphers in which each occurrence of a plaintext symbol is replaced by a corresponding
+    ciphertext symbol to generate ciphertext.<br/>
+    Frequency Analysis - the study of the frequency of letters or groups of letters in a ciphertext
+    </p>
+    <div id="setup-container">
+        <textarea cols="100" rows="10" id="ciphertext">
+            
+        </textarea>
+        <ol>
+          <li>Enter your ciphertext (intercept) into the text box</li>
+          <li>Click "Analyze"</li>
+          <li>Perform substitutions to break the cipher!</li>
+        </ol>
+        <button id="analyze-btn">Analyze!</button>
+    </div>
+    
+    <div id="analysis-container" style="display: block">
+    <!-- display: none while not in use -->
+    <p id="subd-text"></p>
+    <h2>English language letter frequencies</h2>
+        <table id="frequency-table">
+          <thead>
+            <tr>
+              <th>E</th>
+              <th>T</th>
+              <th>A</th>
+              <th>O</th>
+              <th>I</th>
+              <th>N</th>
+              <th>S</th>
+              <th>H</th>
+              <th>R</th>
+              <th>D</th>
+              <th>L</th>
+              <th>C</th>
+              <th>U</th>
+              <th>M</th>
+              <th>W</th>
+              <th>F</th>
+              <th>G</th>
+              <th>Y</th>
+              <th>P</th>
+              <th>B</th>
+              <th>V</th>
+              <th>K</th>
+              <th>J</th>
+              <th>X</th>
+              <th>Q</th>
+              <th>Z</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12.7</td>
+              <td>9.1</td>
+              <td>8.2</td>
+              <td>7.5</td>
+              <td>7.0</td>
+              <td>6.7</td>
+              <td>6.3</td>
+              <td>6.1</td>
+              <td>6.0</td>
+              <td>4.3</td>
+              <td>4.0</td>
+              <td>2.8</td>
+              <td>2.8</td>
+              <td>2.4</td>
+              <td>2.4</td>
+              <td>2.2</td>
+              <td>2.0</td>
+              <td>2.0</td>
+              <td>1.9</td>
+              <td>1.5</td>
+              <td>1.0</td>
+              <td>0.8</td>
+              <td>0.15</td>
+              <td>0.15</td>
+              <td>0.10</td>
+              <td>0.07</td>
+            </tr>
+          </tbody>
+       </table>
+       <p>
+          Enter a letter into each input to automatically perform substitutions.
+       </p>
+       <table id="key-table">
+          <thead>
+            <tr>
+              <th>Letter</th>
+              <th>Count</th>
+              <th>Frequency</th>
+              <th>Substitute</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
